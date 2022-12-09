@@ -1,0 +1,27 @@
+import java.util.*;
+public class AnagramExample {
+    public static List<List<String>> anagram(String[] s){
+        List<List<String>> result=new ArrayList<>();
+        HashMap<String,List<String>> map=new HashMap<>();
+        for(String strn:s) {
+            char[] ch=strn.toCharArray();
+            Arrays.sort(ch);
+            String k=new String(ch);
+            if(map.containsKey(k)) {
+                map.get(k).add(strn);
+            }
+            else {
+                List<String> strnList=new ArrayList<>();
+                strnList.add(strn);
+                map.put(k, strnList);
+            }
+        }
+        result.addAll(map.values());
+        return result;
+    }
+    public static void main(String[] args) {
+        String[] str= {"eat","tea","tan","ate","nat","bat"};
+        List<List<String>> ans=anagram(str);
+        ans.forEach(a->System.out.println(a+" "));
+    }
+}
