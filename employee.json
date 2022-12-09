@@ -1,0 +1,24 @@
+[
+    { 
+      "name": "Tejasree", 
+      "id": 1,
+      "role":"Software Engineer Trainee" 
+    },
+    { 
+      "name": "Sripriya", 
+      "id": 2,
+      "role": "Data Analyst" 
+    },
+    { 
+        "name": "Rahul", 
+        "id": 3,
+        "role": "Backend Developer" 
+      },
+
+      { 
+        "name": "Supriya", 
+        "id": 456,
+        "role": "DevOps Engineer" 
+      }
+    
+]
